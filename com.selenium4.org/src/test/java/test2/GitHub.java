@@ -21,12 +21,12 @@ public class GitHub {
 		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		
-		WebElement searchbox = driver.findElement(By.name("q"));
+		WebElement searchBox = driver.findElement(By.name("q"));
 		String attr = driver.switchTo().activeElement().getAttribute("title");
 		System.out.println(attr);
-		System.out.println(searchbox.getTagName());
-		System.out.println(searchbox.getText());
-		System.out.println(searchbox.getCssValue("color"));
+		System.out.println(searchBox.getTagName());
+		System.out.println(searchBox.getText());
+		System.out.println(searchBox.getCssValue("color"));
 
 	}
 
